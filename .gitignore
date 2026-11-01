@@ -1,0 +1,13 @@
+# Power BI
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+*.pbix
+*.pbix.~
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Temporales
+*.tmp

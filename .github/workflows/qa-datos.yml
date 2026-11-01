@@ -1,0 +1,20 @@
+name: QA de datos
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validar-snapshot:
+    name: Validar snapshot de datos
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Ejecutar casos de prueba de datos
+        shell: pwsh
+        run: ./scripts/validar-datos.ps1
